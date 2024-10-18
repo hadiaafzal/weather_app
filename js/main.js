@@ -15,7 +15,7 @@ $(document).ready(function () {
 
 // Function to fetch weather data from 7Timer API
 function fetchWeatherData(lat, lon) {
-    const apiUrl = `http://www.7timer.info/bin/api.pl?lon=${lon}&lat=${lat}&product=civil&output=json`;
+    const apiUrl = `https://www.7timer.info/bin/api.pl?lon=${lon}&lat=${lat}&product=civil&output=json`;
 
 
 
@@ -28,7 +28,7 @@ function fetchWeatherData(lat, lon) {
     loadingMessage.style.display = 'block';  // Show the "Getting Forecast..." message
 
     // Fetch weather data from the API
-    fetch(`http://www.7timer.info/bin/api.pl?lon=${lon}&lat=${lat}&product=civil&output=json`)
+    fetch(`https://www.7timer.info/bin/api.pl?lon=${lon}&lat=${lat}&product=civil&output=json`)
         .then(response => {
             if (!response.ok) {
                 throw new Error(`HTTP error! status: ${response.status}`);
