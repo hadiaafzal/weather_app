@@ -24,9 +24,10 @@ Web browser (for testing)
 # Cloning
 
 To clone this repository, use the following:
+
 bash
 
-# git clone 
+ git clone https://github.com/hadiaafzal/weather_app.git
 # Setup
 1)Clone the repository using the command above.
 
